@@ -1,4 +1,4 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.listener;
 
 //RecyclerView的item点击事件
 public interface RvListener {

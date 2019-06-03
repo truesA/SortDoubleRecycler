@@ -1,7 +1,8 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.javavs;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import com.lhm.sortdoublerecycler.bean.RightBean;
 
 
 /**

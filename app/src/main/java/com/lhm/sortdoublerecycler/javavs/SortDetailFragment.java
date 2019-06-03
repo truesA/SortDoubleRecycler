@@ -1,4 +1,4 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.javavs;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,6 +12,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.lhm.sortdoublerecycler.bean.SortBean;
+import com.lhm.sortdoublerecycler.listener.CheckListener;
+import com.lhm.sortdoublerecycler.R;
+import com.lhm.sortdoublerecycler.bean.RightBean;
+import com.lhm.sortdoublerecycler.listener.RvListener;
 
 import java.util.ArrayList;
 import java.util.List;

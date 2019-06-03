@@ -1,4 +1,4 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.listener;
 
 
 public interface CheckListener {

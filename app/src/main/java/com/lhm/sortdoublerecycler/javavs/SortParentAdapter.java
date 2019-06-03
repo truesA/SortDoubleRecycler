@@ -1,4 +1,4 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.javavs;
 
 
 import android.content.Context;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import com.lhm.sortdoublerecycler.R;
+import com.lhm.sortdoublerecycler.listener.RvListener;
 
 import java.util.List;
 

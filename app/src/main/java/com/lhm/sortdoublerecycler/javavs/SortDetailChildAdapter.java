@@ -1,4 +1,4 @@
-package com.lhm.sortdoublerecycler;
+package com.lhm.sortdoublerecycler.javavs;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.lhm.sortdoublerecycler.R;
+import com.lhm.sortdoublerecycler.bean.RightBean;
+import com.lhm.sortdoublerecycler.listener.RvListener;
 
 import java.util.List;
 

@@ -8,6 +8,12 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import com.google.gson.Gson
+import com.lhm.sortdoublerecycler.javavs.ItemHeaderDecoration
+import com.lhm.sortdoublerecycler.bean.SortBean
+import com.lhm.sortdoublerecycler.javavs.SortDetailFragment
+import com.lhm.sortdoublerecycler.javavs.SortParentAdapter
+import com.lhm.sortdoublerecycler.listener.CheckListener
+import com.lhm.sortdoublerecycler.listener.RvListener
 import java.io.IOException
 import java.util.ArrayList
 
@@ -45,13 +51,14 @@ class MainActivity : AppCompatActivity() , CheckListener {
         for (i in categoryOneArray.indices) {
             list.add(categoryOneArray[i].name)
         }
-        mSortAdapter = SortParentAdapter(mContext, list, RvListener { id, position ->
-            if (mSortDetailFragment != null) {
-                isMoved = true
-                targetPosition = position
-                setChecked(position, true)
-            }
-        })
+        mSortAdapter = SortParentAdapter(mContext, list,
+            RvListener { id, position ->
+                if (mSortDetailFragment != null) {
+                    isMoved = true
+                    targetPosition = position
+                    setChecked(position, true)
+                }
+            })
         rvSort!!.adapter = mSortAdapter
         createFragment()
     }
