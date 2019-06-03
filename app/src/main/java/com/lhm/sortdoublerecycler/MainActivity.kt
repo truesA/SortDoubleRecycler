@@ -147,8 +147,8 @@ class MainActivity : AppCompatActivity() , CheckListener {
         rvSort = findViewById(R.id.rv_sort) as RecyclerView
         mLinearLayoutManager = LinearLayoutManager(mContext)
         rvSort!!.layoutManager = mLinearLayoutManager
-        val decoration = DividerItemDecoration(mContext!!, DividerItemDecoration.VERTICAL)
-        rvSort!!.addItemDecoration(decoration)
+//        val decoration = DividerItemDecoration(mContext!!, DividerItemDecoration.VERTICAL)
+//        rvSort!!.addItemDecoration(decoration)
 
     }
 
