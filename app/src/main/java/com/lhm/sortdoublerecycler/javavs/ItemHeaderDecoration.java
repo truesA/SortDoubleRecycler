@@ -27,11 +27,11 @@ public class ItemHeaderDecoration extends RecyclerView.ItemDecoration {
     private CheckListener mCheckListener;
     public static String currentTag = "0";//标记当前左侧选中的position，因为有可能选中的item，右侧不能置顶，所以强制替换掉当前的tag
 
-    void setCheckListener(CheckListener checkListener) {
+    public void setCheckListener(CheckListener checkListener) {
         mCheckListener = checkListener;
     }
 
-    ItemHeaderDecoration(Context context, List<RightBean> datas) {
+    public ItemHeaderDecoration(Context context, List<RightBean> datas) {
         this.mDatas = datas;
         Paint paint = new Paint();
         mTitleHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, context.getResources().getDisplayMetrics());
